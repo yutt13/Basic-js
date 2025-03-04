@@ -1,4 +1,3 @@
-document.write("Hello JS");
 alert("Welcome to my website");
 
 function myFunction() {
@@ -6,22 +5,27 @@ function myFunction() {
 }
 
 console.log("Hello from console");
-
 function calculateGrade() {
     const score = document.getElementById('score').value;
     let grade = '';
 
     if (score >= 80) {
-        grade = 'A';
+        grade = '4';
+    } else if (score >= 75) {
+        grade = '3.5';
     } else if (score >= 70) {
-        grade = 'B';
+        grade = '3';
+    } else if (score >= 65) {
+        grade = '2.5';
     } else if (score >= 60) {
-        grade = 'C';
+        grade = '2';
+    } else if (score >= 55) {
+        grade = '1.5';
     } else if (score >= 50) {
-        grade = 'D';
+        grade = '1';
     } else {
-        grade = 'F';
+        grade = '0';
     }
 
-    document.getElementById('result').innerHTML = "Your grade is: " + grade;
+    document.getElementById('result').innerHTML = "เกรดที่คุณได้: " + grade;
 }
